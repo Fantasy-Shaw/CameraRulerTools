@@ -37,6 +37,7 @@ class ExamPic4Length:
         self.scale = referencePixelLength / self.referenceLength
         if printScale:
             print("PixelDistance / RealDistance =", self.scale)
+            print("RealDistance / PixelDistance =", 1 / self.scale)
 
     def getLength(self, printDistance=True, printScale=True):
         self.getScale(printScale)
